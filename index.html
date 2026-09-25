@@ -22,10 +22,10 @@
 <body>
     <main>
         <section class="bg-[#f6f3ff]">
-            <div class="w-[90%] max-w-[1440px] mx-auto px-[16px] py-[40px] flex flex-row justify-between items-center">
-                <div class="w-[50%] flex flex-col justify-center items-start ">
+            <div class="w-[90%] max-w-[1440px] mx-auto px-[16px] py-[40px] flex flex-col md:flex-row justify-between items-center gap-[32px]">
+                <div class="w-full md:w-[50%] flex flex-col justify-center items-start">
                     <div class="max-w-[600px]">
-                        <h1 class="font-[Outfit,sans-serif] font-[700] text-[36px] text-[#14102B] pb-[16px]">
+                        <h1 class="font-[Outfit,sans-serif] font-[700] text-[28px] md:text-[36px] text-[#14102B] pb-[16px]">
                             Tudo para ouvir do
                             <span class="text-[#6d3bf5]">seu jeito</span>
                         </h1>
@@ -92,123 +92,196 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[50%] h-[360px] flex items-center justify-center gap-[24px]">
-                    <span class="w-[44px] h-[30%] rounded-full bg-[#6d3bf5] [--p:33%] animate-[eq-a_1.1s_ease-in-out_-0.2s_infinite] motion-reduce:animate-none"></span>
-                    <span class="w-[44px] h-[30%] rounded-full bg-[#ff3d9a] [--p:67%] animate-[eq-b_0.9s_ease-in-out_-0.6s_infinite] motion-reduce:animate-none"></span>
-                    <span class="w-[44px] h-[30%] rounded-full bg-[#6d3bf5] [--p:83%] animate-[eq-c_1.3s_ease-in-out_-0.4s_infinite] motion-reduce:animate-none"></span>
-                    <span class="w-[44px] h-[30%] rounded-full bg-[#ffc53d] [--p:53%] animate-[eq-a_1s_ease-in-out_-0.8s_infinite] motion-reduce:animate-none"></span>
-                    <span class="w-[44px] h-[30%] rounded-full bg-[#6d3bf5] [--p:75%] animate-[eq-b_1.2s_ease-in-out_-0.1s_infinite] motion-reduce:animate-none"></span>
-                    <span class="w-[44px] h-[30%] rounded-full bg-[#ff3d9a] [--p:33%] animate-[eq-c_0.8s_ease-in-out_-0.5s_infinite] motion-reduce:animate-none"></span>
-                    <span class="w-[44px] h-[30%] rounded-full bg-[#6d3bf5] [--p:67%] animate-[eq-a_1.4s_ease-in-out_-0.9s_infinite] motion-reduce:animate-none"></span>
+                <div class="w-full md:w-[50%] h-[200px] md:h-[360px] flex items-center justify-center gap-[12px] md:gap-[24px]">
+                    <span class="w-[24px] md:w-[44px] h-[30%] rounded-full bg-[#6d3bf5] [--p:33%] animate-[eq-a_1.1s_ease-in-out_-0.2s_infinite] motion-reduce:animate-none"></span>
+                    <span class="w-[24px] md:w-[44px] h-[30%] rounded-full bg-[#ff3d9a] [--p:67%] animate-[eq-b_0.9s_ease-in-out_-0.6s_infinite] motion-reduce:animate-none"></span>
+                    <span class="w-[24px] md:w-[44px] h-[30%] rounded-full bg-[#6d3bf5] [--p:83%] animate-[eq-c_1.3s_ease-in-out_-0.4s_infinite] motion-reduce:animate-none"></span>
+                    <span class="w-[24px] md:w-[44px] h-[30%] rounded-full bg-[#ffc53d] [--p:53%] animate-[eq-a_1s_ease-in-out_-0.8s_infinite] motion-reduce:animate-none"></span>
+                    <span class="w-[24px] md:w-[44px] h-[30%] rounded-full bg-[#6d3bf5] [--p:75%] animate-[eq-b_1.2s_ease-in-out_-0.1s_infinite] motion-reduce:animate-none"></span>
+                    <span class="w-[24px] md:w-[44px] h-[30%] rounded-full bg-[#ff3d9a] [--p:33%] animate-[eq-c_0.8s_ease-in-out_-0.5s_infinite] motion-reduce:animate-none"></span>
+                    <span class="w-[24px] md:w-[44px] h-[30%] rounded-full bg-[#6d3bf5] [--p:67%] animate-[eq-a_1.4s_ease-in-out_-0.9s_infinite] motion-reduce:animate-none"></span>
                 </div>
             </div>
         </section>
         <section class="discos w-full bg-[#14102B] py-[80px] overflow-hidden">
-            <div class="w-[90%] max-w-[1440px] mx-auto flex justify-center items-start gap-[32px] h-[350px]">
- 
-            <div class="disco-wrapper group relative w-[200px] h-[200px] cursor-pointer" data-index="0">
- 
-                <div class="absolute inset-[10px] z-[10] transition-transform duration-[700ms] ease-out group-[.tocando]:translate-y-[150px]">
+            <div class="w-[90%] max-w-[1440px] mx-auto overflow-x-auto">
+            <div class="flex flex-nowrap justify-center md:justify-center items-start gap-[16px] md:gap-[32px] h-[220px] md:h-[350px] w-max mx-auto">
+
+            <div class="disco-wrapper group relative w-[120px] h-[120px] md:w-[200px] md:h-[200px] cursor-pointer" data-index="0">
+                <div class="absolute inset-[6px] md:inset-[10px] z-[10] transition-transform duration-[700ms] ease-out translate-y-0 group-[.tocando]:translate-y-[90px] md:group-[.tocando]:translate-y-[150px]">
                     <div class="relative w-full h-full rounded-full flex items-center justify-center bg-[repeating-radial-gradient(circle,#111_0px,#111_2px,#222_3px)] animate-[spin_3s_linear_infinite] [animation-play-state:paused] group-[.tocando]:[animation-play-state:running]">
-                        <div class="w-[80px] h-[80px] rounded-full overflow-hidden bg-[#6D3BF5]">
+                        <div class="w-[50px] h-[50px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden bg-[#6D3BF5]">
                             <img src="" alt="" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute w-[10px] h-[10px] rounded-full bg-[#14102B]"></div>
+                        <div class="absolute w-[6px] h-[6px] md:w-[10px] md:h-[10px] rounded-full bg-[#14102B]"></div>
                     </div>
                 </div>
- 
-                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_46px,#6D3BF5_47px)]">
-                    <div class="absolute bottom-0 inset-x-0 px-[14px] pb-[12px]">
-                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[15px] text-white truncate"></p>
-                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[13px] text-white/80 truncate"></p>
+                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_28px,#6D3BF5_29px)] md:bg-[radial-gradient(circle_at_center,transparent_46px,#6D3BF5_47px)]">
+                    <div class="absolute bottom-0 inset-x-0 px-[8px] md:px-[14px] pb-[8px] md:pb-[12px]">
+                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[11px] md:text-[15px] text-white truncate"></p>
+                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[9px] md:text-[13px] text-white/80 truncate"></p>
                     </div>
                 </div>
- 
             </div>
- 
-            <div class="disco-wrapper group relative w-[200px] h-[200px] cursor-pointer mt-[150px]" data-index="1">
- 
-                <div class="absolute inset-[10px] z-[10] transition-transform duration-[700ms] ease-out group-[.tocando]:-translate-y-[150px]">
+
+            <div class="disco-wrapper group relative w-[120px] h-[120px] md:w-[200px] md:h-[200px] cursor-pointer mt-[90px] md:mt-[150px]" data-index="1">
+                <div class="absolute inset-[6px] md:inset-[10px] z-[10] transition-transform duration-[700ms] ease-out translate-y-0 group-[.tocando]:-translate-y-[90px] md:group-[.tocando]:-translate-y-[150px]">
                     <div class="relative w-full h-full rounded-full flex items-center justify-center bg-[repeating-radial-gradient(circle,#111_0px,#111_2px,#222_3px)] animate-[spin_3s_linear_infinite] [animation-play-state:paused] group-[.tocando]:[animation-play-state:running]">
-                        <div class="w-[80px] h-[80px] rounded-full overflow-hidden bg-[#FF3D9A]">
+                        <div class="w-[50px] h-[50px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden bg-[#FF3D9A]">
                             <img src="" alt="" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute w-[10px] h-[10px] rounded-full bg-[#14102B]"></div>
+                        <div class="absolute w-[6px] h-[6px] md:w-[10px] md:h-[10px] rounded-full bg-[#14102B]"></div>
                     </div>
                 </div>
- 
-                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_46px,#FF3D9A_47px)]">
-                    <div class="absolute bottom-0 inset-x-0 px-[14px] pb-[12px]">
-                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[15px] text-white truncate"></p>
-                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[13px] text-white/80 truncate"></p>
+                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_28px,#FF3D9A_29px)] md:bg-[radial-gradient(circle_at_center,transparent_46px,#FF3D9A_47px)]">
+                    <div class="absolute bottom-0 inset-x-0 px-[8px] md:px-[14px] pb-[8px] md:pb-[12px]">
+                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[11px] md:text-[15px] text-white truncate"></p>
+                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[9px] md:text-[13px] text-white/80 truncate"></p>
                     </div>
                 </div>
- 
             </div>
- 
-            <div class="disco-wrapper group relative w-[200px] h-[200px] cursor-pointer" data-index="2">
- 
-                <div class="absolute inset-[10px] z-[10] transition-transform duration-[700ms] ease-out group-[.tocando]:translate-y-[150px]">
+
+            <div class="disco-wrapper group relative w-[120px] h-[120px] md:w-[200px] md:h-[200px] cursor-pointer" data-index="2">
+                <div class="absolute inset-[6px] md:inset-[10px] z-[10] transition-transform duration-[700ms] ease-out translate-y-0 group-[.tocando]:translate-y-[90px] md:group-[.tocando]:translate-y-[150px]">
                     <div class="relative w-full h-full rounded-full flex items-center justify-center bg-[repeating-radial-gradient(circle,#111_0px,#111_2px,#222_3px)] animate-[spin_3s_linear_infinite] [animation-play-state:paused] group-[.tocando]:[animation-play-state:running]">
-                        <div class="w-[80px] h-[80px] rounded-full overflow-hidden bg-[#6D3BF5]">
+                        <div class="w-[50px] h-[50px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden bg-[#6D3BF5]">
                             <img src="" alt="" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute w-[10px] h-[10px] rounded-full bg-[#14102B]"></div>
+                        <div class="absolute w-[6px] h-[6px] md:w-[10px] md:h-[10px] rounded-full bg-[#14102B]"></div>
                     </div>
                 </div>
- 
-                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_46px,#6D3BF5_47px)]">
-                    <div class="absolute bottom-0 inset-x-0 px-[14px] pb-[12px]">
-                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[15px] text-white truncate"></p>
-                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[13px] text-white/80 truncate"></p>
+                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_28px,#6D3BF5_29px)] md:bg-[radial-gradient(circle_at_center,transparent_46px,#6D3BF5_47px)]">
+                    <div class="absolute bottom-0 inset-x-0 px-[8px] md:px-[14px] pb-[8px] md:pb-[12px]">
+                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[11px] md:text-[15px] text-white truncate"></p>
+                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[9px] md:text-[13px] text-white/80 truncate"></p>
                     </div>
                 </div>
- 
             </div>
- 
-            <div class="disco-wrapper group relative w-[200px] h-[200px] cursor-pointer mt-[150px]" data-index="3">
- 
-                <div class="absolute inset-[10px] z-[10] transition-transform duration-[700ms] ease-out group-[.tocando]:-translate-y-[150px]">
+
+            <div class="disco-wrapper group relative w-[120px] h-[120px] md:w-[200px] md:h-[200px] cursor-pointer mt-[90px] md:mt-[150px]" data-index="3">
+                <div class="absolute inset-[6px] md:inset-[10px] z-[10] transition-transform duration-[700ms] ease-out translate-y-0 group-[.tocando]:-translate-y-[90px] md:group-[.tocando]:-translate-y-[150px]">
                     <div class="relative w-full h-full rounded-full flex items-center justify-center bg-[repeating-radial-gradient(circle,#111_0px,#111_2px,#222_3px)] animate-[spin_3s_linear_infinite] [animation-play-state:paused] group-[.tocando]:[animation-play-state:running]">
-                        <div class="w-[80px] h-[80px] rounded-full overflow-hidden bg-[#FFC53D]">
+                        <div class="w-[50px] h-[50px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden bg-[#FFC53D]">
                             <img src="" alt="" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute w-[10px] h-[10px] rounded-full bg-[#14102B]"></div>
+                        <div class="absolute w-[6px] h-[6px] md:w-[10px] md:h-[10px] rounded-full bg-[#14102B]"></div>
                     </div>
                 </div>
- 
-                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_46px,#FFC53D_47px)]">
-                    <div class="absolute bottom-0 inset-x-0 px-[14px] pb-[12px]">
-                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[15px] text-[#14102B] truncate"></p>
-                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[13px] text-[#14102B]/80 truncate"></p>
+                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_28px,#FFC53D_29px)] md:bg-[radial-gradient(circle_at_center,transparent_46px,#FFC53D_47px)]">
+                    <div class="absolute bottom-0 inset-x-0 px-[8px] md:px-[14px] pb-[8px] md:pb-[12px]">
+                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[11px] md:text-[15px] text-[#14102B] truncate"></p>
+                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[9px] md:text-[13px] text-[#14102B]/80 truncate"></p>
                     </div>
                 </div>
- 
             </div>
- 
-            <div class="disco-wrapper group relative w-[200px] h-[200px] cursor-pointer" data-index="4">
- 
-                <div class="absolute inset-[10px] z-[10] transition-transform duration-[700ms] ease-out group-[.tocando]:translate-y-[150px]">
+
+            <div class="disco-wrapper group relative w-[120px] h-[120px] md:w-[200px] md:h-[200px] cursor-pointer" data-index="4">
+                <div class="absolute inset-[6px] md:inset-[10px] z-[10] transition-transform duration-[700ms] ease-out translate-y-0 group-[.tocando]:translate-y-[90px] md:group-[.tocando]:translate-y-[150px]">
                     <div class="relative w-full h-full rounded-full flex items-center justify-center bg-[repeating-radial-gradient(circle,#111_0px,#111_2px,#222_3px)] animate-[spin_3s_linear_infinite] [animation-play-state:paused] group-[.tocando]:[animation-play-state:running]">
-                        <div class="w-[80px] h-[80px] rounded-full overflow-hidden bg-[#6D3BF5]">
+                        <div class="w-[50px] h-[50px] md:w-[80px] md:h-[80px] rounded-full overflow-hidden bg-[#6D3BF5]">
                             <img src="" alt="" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute w-[10px] h-[10px] rounded-full bg-[#14102B]"></div>
+                        <div class="absolute w-[6px] h-[6px] md:w-[10px] md:h-[10px] rounded-full bg-[#14102B]"></div>
                     </div>
                 </div>
- 
-                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_46px,#6D3BF5_47px)]">
-                    <div class="absolute bottom-0 inset-x-0 px-[14px] pb-[12px]">
-                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[15px] text-white truncate"></p>
-                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[13px] text-white/80 truncate"></p>
+                <div class="absolute inset-0 z-[20] rounded-[4px] shadow-[0_8px_20px_rgba(0,0,0,0.35)] bg-[radial-gradient(circle_at_center,transparent_28px,#6D3BF5_29px)] md:bg-[radial-gradient(circle_at_center,transparent_46px,#6D3BF5_47px)]">
+                    <div class="absolute bottom-0 inset-x-0 px-[8px] md:px-[14px] pb-[8px] md:pb-[12px]">
+                        <p class="disco-titulo font-[Outfit,sans-serif] font-[700] text-[11px] md:text-[15px] text-white truncate"></p>
+                        <p class="disco-artista font-[Inter,sans-serif] font-[400] text-[9px] md:text-[13px] text-white/80 truncate"></p>
                     </div>
                 </div>
- 
             </div>
- 
+
             </div>
- 
-            <audio id="audio-player"></audio>
+            </div>
+        </section>
+
+<audio id="audio-player"></audio>
+        <section class="bg-[#F6F3FF] text-[#14102B]">
+            <header class="py-10 px-4 text-center sm:py-12 sm:px-6 lg:py-16">
+                <h1 class="font-titulo font-bold text-2xl sm:text-3xl lg:text-4xl">Fale com a gente</h1>
+                <p class="mt-3 text-[#6D3BF5] text-sm sm:text-base max-w-md mx-auto">Dúvidas, sugestões ou quer receber novidades? Preencha o formulário.</p>
+            </header>
+
+            <!-- Conteúdo principal: formulário + informações -->
+            <main class="max-w-4xl mx-auto px-4 py-10 sm:px-6 sm:py-12 lg:py-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+
+                <!-- Formulário de contato -->
+                <form class="bg-white rounded-2xl p-6 sm:p-8 space-y-4">
+                <h2 class="font-titulo font-medium text-xl sm:text-2xl mb-2">Envie sua mensagem</h2>
+
+                <div>
+                    <label class="block text-sm mb-1">Nome</label>
+                    <input type="text" placeholder="Seu nome" class="w-full rounded-xl bg-[#F6F3FF] border border-[#14102B]/10 px-4 py-3">
+                </div>
+
+                <div>
+                    <label class="block text-sm mb-1">E-mail</label>
+                    <input type="email" placeholder="nome@email.com" class="w-full rounded-xl bg-[#F6F3FF] border border-[#14102B]/10 px-4 py-3">
+                </div>
+
+                <div>
+                    <label class="block text-sm mb-1">Assunto</label>
+                    <select class="w-full rounded-xl bg-[#F6F3FF] border border-[#14102B]/10 px-4 py-3">
+                    <option>Dúvida</option>
+                    <option>Sugestão</option>
+                    <option>Parceria</option>
+                    <option>Quero receber novidades</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm mb-1">Mensagem</label>
+                    <textarea rows="4" placeholder="Escreva aqui sua mensagem" class="w-full rounded-xl bg-[#F6F3FF] border border-[#14102B]/10 px-4 py-3"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-[#FF3D9A] text-white font-medium py-3 rounded-full">
+                    Enviar mensagem
+                </button>
+                </form>
+
+                <!-- Informações de contato -->
+                <div class="space-y-4">
+                <div class="bg-white rounded-2xl p-5 sm:p-6 flex items-center gap-4">
+                    <i class="fa-solid fa-envelope text-[#6D3BF5] text-xl w-8 text-center"></i>
+                    <div>
+                    <p class="font-titulo font-medium">E-mail</p>
+                    <p class="text-sm text-[#14102B]/70">contato@melodia.app</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 sm:p-6 flex items-center gap-4">
+                    <i class="fa-solid fa-phone text-[#6D3BF5] text-xl w-8 text-center"></i>
+                    <div>
+                    <p class="font-titulo font-medium">Telefone</p>
+                    <p class="text-sm text-[#14102B]/70">(11) 4000-0000</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 sm:p-6 flex items-center gap-4">
+                    <i class="fa-solid fa-location-dot text-[#6D3BF5] text-xl w-8 text-center"></i>
+                    <div>
+                    <p class="font-titulo font-medium">Endereço</p>
+                    <p class="text-sm text-[#14102B]/70">Av. da Música, 123 — São Paulo, SP</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#14102B] rounded-2xl p-5 sm:p-6">
+                    <p class="font-titulo font-medium text-white mb-3">Siga a Melodia</p>
+                    <div class="flex gap-4 text-lg text-[#B9A8FF]">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+                </div>
+
+            </main>
+
+            <!-- Rodapé -->
+            <footer class="bg-[#14102B] py-6 text-center text-[#B9A8FF]/60 text-xs px-4">
+                © 2026 Melodia. Todos os direitos reservados.
+            </footer>
         </section>
     </main>
 
