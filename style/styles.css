@@ -1,3 +1,11 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+.font-titulo {
+  font-family: 'Outfit', sans-serif;
 @keyframes eq-a {
     0%, 100% { height: 15%; }
     15% { height: var(--p); }
