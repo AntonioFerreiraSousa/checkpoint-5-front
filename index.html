@@ -22,6 +22,42 @@
 <body>
     <main>
         <section class="bg-[#f6f3ff]">
+    <div class="w-[90%] max-w-[1440px] mx-auto px-[16px] py-[60px] md:py-[80px] flex flex-col md:flex-row justify-between items-center gap-[40px]">
+
+        <!-- Texto + CTA -->
+        <div class="w-full md:w-[50%] flex flex-col justify-center items-start">
+            <div class="max-w-[600px]">
+                <h1 class="font-[Outfit,sans-serif] font-[700] text-[32px] md:text-[44px] leading-[1.15] text-[#14102B] pb-[20px]">
+                    Melodia: sua música,
+                    <span class="text-[#6d3bf5]">sua forma</span>
+                </h1>
+                <p class="font-[Inter,sans-serif] font-[400] text-[16px] md:text-[18px] text-[#14102B]/80 leading-[1.6] pb-[32px]">
+                    Sinta a música com máxima qualidade e descubra faixas incríveis todos os dias.
+                    Streaming simples, inteligente e feito para o seu ritmo.
+                </p>
+                <button id="btn-ouvir-agora"
+                    class="inline-flex items-center gap-[12px] bg-[#FF3D9A] text-white font-[Outfit,sans-serif] font-[500] text-[16px] px-[32px] py-[16px] rounded-full hover:bg-[#e6338a] transition-colors duration-[200ms]">
+                    <i class="fas fa-play"></i>
+                    Ouvir Agora
+                </button>
+            </div>
+        </div>
+
+        <!-- Vídeo de destaque -->
+        <div class="w-full md:w-[50%] h-[220px] md:h-[360px] flex items-center justify-center">
+            <video
+                class="w-full h-full object-cover rounded-2xl"
+                src="assets/videos/melodiav.mp4"
+                autoplay
+                loop
+                muted
+                playsinline>
+            </video>
+        </div>
+
+    </div>
+</section>
+        <section id ="apresentacao" class="bg-[#f6f3ff]">
             <div class="w-[90%] max-w-[1440px] mx-auto px-[16px] py-[40px] flex flex-col md:flex-row justify-between items-center gap-[32px]">
                 <div class="w-full md:w-[50%] flex flex-col justify-center items-start">
                     <div class="max-w-[600px]">
