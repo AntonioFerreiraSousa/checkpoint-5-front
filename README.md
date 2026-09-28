@@ -77,7 +77,7 @@ cd checkpoint-5-front
 
 | Integrante | Contribuição |
 |---|---|
-| [Guilherme Pereira](https://github.com/gprsilva) | Estrutura inicial, seção Apresentação e discos, consumo da API Jamendo |
+| [Guilherme Pereira](https://github.com/gprsilva) | Estrutura inicial e Apresentação|
 | [Matheus Mendes](https://github.com/MatheusMendes777) | Hero Section |
 | [Matheus Sato](https://github.com/MatheusSato00) | Seção de Avaliações |
 | [Antonio Ferreira Sousa](https://github.com/AntonioFerreiraSousa) | Formulário de contato |
