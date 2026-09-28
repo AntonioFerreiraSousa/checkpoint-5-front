@@ -67,3 +67,14 @@ async function carregarDiscos() {
 
 player.addEventListener("ended", pararDisco);
 carregarDiscos();
+
+document.querySelector("#btn-ouvir-agora").addEventListener("click", () => {
+    const secaoDiscos = document.querySelector("#apresentacao");
+    const primeiroDisco = document.querySelector('.disco-wrapper[data-index="0"]');
+
+    secaoDiscos?.scrollIntoView({ behavior: "smooth" });
+
+    if (primeiroDisco) {
+        setTimeout(() => alternarDisco(primeiroDisco), 400);
+    }
+});
